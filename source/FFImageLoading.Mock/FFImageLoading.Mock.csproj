@@ -2,21 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <NetStandardImplicitPackageVersion>2.0.2</NetStandardImplicitPackageVersion>
-    <AssemblyName>FFImageLoading.Platform</AssemblyName>
-    <Version>1.0.0</Version>
-    <Authors>Daniel Luberda</Authors>
-    <Company>Daniel Luberda</Company>
-    <Product>FFImageLoading</Product>
-    <PackageId>FFImageLoading.Platform.Mock</PackageId>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
-    <NeutralLanguage>en</NeutralLanguage>
-    <Copyright>Daniel Luberda</Copyright>    
+    <AssemblyName>FFImageLoading.Platform</AssemblyName>   
     <NoWarn>1701;1702;1705;1591;1587;NU1605</NoWarn>    
     <RootNamespace>FFImageLoading.Platform</RootNamespace>
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug</OutputPath>
     <LangVersion>Latest</LangVersion>
@@ -29,10 +18,6 @@
     <DocumentationFile>bin\Release\FFImageLoading.Platform.xml</DocumentationFile>
     <LangVersion>Latest</LangVersion>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.1" />
-  </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\FFImageLoading.Common\FFImageLoading.csproj" />
   </ItemGroup>

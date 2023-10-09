@@ -31,37 +31,14 @@
     <LangVersion>latest</LangVersion>
     <CreatePackage>false</CreatePackage>
   </PropertyGroup>
-  <!--<ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
-    <Reference Include="Xamarin.iOS" />
-  </ItemGroup>-->
-  <!--<ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>-->
   <ItemGroup>
-    <!--<Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BlurredTransformation.cs" />
-    <Compile Include="CircleTransformation.cs" />
-    <Compile Include="ColorSpaceTransformation.cs" />
-    <Compile Include="GrayscaleTransformation.cs" />
-    <Compile Include="RoundedTransformation.cs" />
-    <Compile Include="SepiaTransformation.cs" />
-    <Compile Include="FlipTransformation.cs" />-->
     <Compile Include="..\FFImageLoading.Transformations\FlipType.cs">
       <Link>FlipType.cs</Link>
     </Compile>
-    <!--<Compile Include="CornersTransformation.cs" />-->
     <Compile Include="..\FFImageLoading.Transformations\CornerTransformType.cs">
       <Link>CornerTransformType.cs</Link>
     </Compile>
-    <!--<Compile Include="CropTransformation.cs" />
-    <Compile Include="RotateTransformation.cs" />
-    <Compile Include="TintTransformation.cs" />
-    <Compile Include="ColorFillTransformation.cs" />-->
   </ItemGroup>
-<!--  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />-->
   <ItemGroup>
     <ProjectReference Include="..\FFImageLoading.Common\FFImageLoading.csproj">
     </ProjectReference>
