@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FFImageLoading.Transformations</RootNamespace>
+    <AssemblyName>FFImageLoading.Transformations</AssemblyName>
+    <TargetFramework>net7.0-android</TargetFramework>
+    <NoWarn>1701;1702;1705;1591;1587;NU1605</NoWarn> 
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>ANDROID;__ANDROID__;</DefineConstants>        
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <DefineConstants>ANDROID;__ANDROID__;</DefineConstants>        
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>		
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>ANDROID;__ANDROID__;</DefineConstants>        
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <DocumentationFile>bin\Release\FFImageLoading.Transformations.xml</DocumentationFile>
+    <DefineConstants>ANDROID;__ANDROID__;</DefineConstants>        
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <!--<ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>-->
+  <ItemGroup>
+    <!--<Compile Include="BlurredTransformation.cs" />
+    <Compile Include="CircleTransformation.cs" />
+    <Compile Include="ColorSpaceTransformation.cs" />
+    <Compile Include="GrayscaleTransformation.cs" />
+    <Compile Include="RoundedTransformation.cs" />
+    <Compile Include="SepiaTransformation.cs" />-->
+    <Compile Include="..\FFImageLoading.Transformations\FlipType.cs">
+      <Link>FlipType.cs</Link>
+    </Compile>
+    <!--<Compile Include="FlipTransformation.cs" />
+    <Compile Include="CornersTransformation.cs" />-->
+    <Compile Include="..\FFImageLoading.Transformations\CornerTransformType.cs">
+      <Link>CornerTransformType.cs</Link>
+    </Compile>
+    <!--<Compile Include="CropTransformation.cs" />
+    <Compile Include="RotateTransformation.cs" />
+    <Compile Include="TintTransformation.cs" />
+    <Compile Include="ColorFillTransformation.cs" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FFImageLoading.Common\FFImageLoading.csproj">
+    </ProjectReference>
+    <ProjectReference Include="..\FFImageLoading.Droid\FFImageLoading.Droid.csproj">
+    </ProjectReference>
+  </ItemGroup>
+<!--  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />-->
+</Project>
