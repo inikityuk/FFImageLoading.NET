@@ -3,7 +3,7 @@
 	<metadata minClientVersion="2.8.1">
    
        <id>Xamarin.FFImageLoading.Svg</id>
-       <version>@version</version>
+       <version>1.0.0</version>
        <title>FFImageLoading SVG support</title>
        <authors>Daniel Luberda</authors>
        <owners></owners>
@@ -22,13 +22,13 @@ SVG support for FFImageLoading library.
        <dependencies>
 
             <group>
-                <dependency id="Xamarin.FFImageLoading" version="@version" />
+                <dependency id="Xamarin.FFImageLoading" version="1.0.0" />
                 <dependency id="SkiaSharp" version="1.68.0" />
             </group>
 
             <group targetFramework="uap">
                 <dependency id="NETStandard.Library" version="1.6.1" />
-                <dependency id="Xamarin.FFImageLoading" version="@version" />
+                <dependency id="Xamarin.FFImageLoading" version="1.0.0" />
                 <dependency id="SkiaSharp" version="1.68.0" />
             </group>                       
 

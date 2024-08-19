@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata minClientVersion="2.8.1">
 
-		<id>Xamarin.FFImageLoading</id>
-		<version>99.9.9</version>
+		<id>Xamarin.FFImageLoading.NET</id>
+		<version>1.0.0</version>
 		<title>FFImageLoading Plugin for Xamarin.iOS / Xamarin.Android / Xamarin.Mac / Windows</title>
 		<authors>Daniel Luberda, Fabien Molinet</authors>
 		<owners/>
@@ -11,6 +11,7 @@
 		<projectUrl>https://github.com/luberda-molinet/FFImageLoading</projectUrl>
 		<iconUrl>https://cdn4.iconfinder.com/data/icons/flat-services-icons/128/startup.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<readme>lib\readme.md</readme>
 
 		<description>
 Xamarin Library to load images quickly and easily.
@@ -42,7 +43,7 @@ Features:
 		<dependencies>
 
             <group targetFramework="net7.0-ios16.1">
-              <!-- <dependency id="WebP.Touch" version="1.0.8" /> -->
+               <dependency id="WebPDecoder.Touch.NET" version="1.0.0" /> 
             </group>
 
 			<group targetFramework="net7.0-android33.0">
@@ -55,6 +56,7 @@ Features:
 
 	</metadata>
 	<files>
+		<file src="..\README.md" target="lib" />
 		<!--Net Standard-->
 		<file src="..\source\FFImageLoading.Common\bin\Release\net7.0\FFImageLoading.dll" target="lib\net7.0\FFImageLoading.dll" />
 		<file src="..\source\FFImageLoading.Common\bin\Release\net7.0\FFImageLoading.xml" target="lib\net7.0\FFImageLoading.xml" />

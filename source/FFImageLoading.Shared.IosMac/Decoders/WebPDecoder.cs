@@ -13,22 +13,22 @@ using WebPCodec = WebP.Mac.WebPCodec;
 #elif __IOS__
 using UIKit;
 using PImage = UIKit.UIImage;
-//using WebPCodec = WebP.Touch.WebPCodec;
+using WebPCodec = WebP.Touch.WebPCodec;
 #endif
 
 namespace FFImageLoading.Decoders
 {
     public class WebPDecoder : IDecoder<PImage>
     {
-        //WebPCodec _decoder;
+        WebPCodec _decoder;
 
         public Task<IDecodedImage<PImage>> DecodeAsync(Stream stream, string path, ImageSource source, ImageInformation imageInformation, TaskParameter parameters)
         {
-            //if (_decoder == null)
-            //    _decoder = new WebPCodec();
+            if (_decoder == null)
+                _decoder = new WebPCodec();
 
             var result = new DecodedImage<PImage>();
-            //result.Image = _decoder.Decode(stream);
+            result.Image = _decoder.Decode(stream);
 
             var downsampleWidth = parameters.DownSampleSize?.Item1 ?? 0;
             var downsampleHeight = parameters.DownSampleSize?.Item2 ?? 0;

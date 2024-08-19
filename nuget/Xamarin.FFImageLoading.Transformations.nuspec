@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata minClientVersion="2.8.1">
    
-       <id>Xamarin.FFImageLoading.Transformations</id>
-       <version>99.9.9</version>
+       <id>Xamarin.FFImageLoading.Transformations.NET</id>
+       <version>1.0.0</version>
        <title>FFImageLoading Transformations</title>
        <authors>Daniel Luberda, Molinet Fabien</authors>
        <owners></owners>
@@ -11,6 +11,7 @@
        <projectUrl>https://github.com/luberda-molinet/FFImageLoading</projectUrl>
        <iconUrl>https://cdn4.iconfinder.com/data/icons/flat-services-icons/128/startup.png</iconUrl>
        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+       <readme>lib\readme.md</readme>
        
        <description>
 Transformations for FFImageLoading library.
@@ -31,21 +32,23 @@ Don't forget to add the package in all platform specific projects. This way the 
        <dependencies>
        
        <group targetFramework="net7.0-ios16.1">
-                <dependency id="Xamarin.FFImageLoading" version="99.9.9" />
+                <dependency id="Xamarin.FFImageLoading.NET" version="1.0.0" />
             </group>
 
 			<group targetFramework="net7.0-android33.0">
-                <dependency id="Xamarin.FFImageLoading" version="99.9.9" />
+                <dependency id="Xamarin.FFImageLoading.NET" version="1.0.0" />
 			</group>
 
 			<group targetFramework="net7.0">
-                <dependency id="Xamarin.FFImageLoading" version="99.9.9" />
+                <dependency id="Xamarin.FFImageLoading.NET" version="1.0.0" />
 			</group>	
               
         </dependencies>
         
 	</metadata>
 	<files>
+        <file src="..\README.md" target="lib" />
+
 		<!--Net Standard-->
         <file src="..\source\FFImageLoading.Transformations\bin\Release\net7.0\FFImageLoading.Transformations.dll" target="lib\net7.0\FFImageLoading.Transformations.dll" />
         <file src="..\source\FFImageLoading.Transformations\bin\Release\net7.0\FFImageLoading.Transformations.xml" target="lib\net7.0\FFImageLoading.Transformations.xml" />

@@ -29,11 +29,6 @@
     <DefineConstants>__UNIFIED__;__MOBILE__;__IOS__</DefineConstants>                
     <CreatePackage>false</CreatePackage>
   </PropertyGroup>
-  <!--<ItemGroup>
-    <Reference Include="WebP.Touch">
-      <HintPath>..\..\packages\WebP.Touch.1.0.8\lib\Xamarin.iOS10\WebP.Touch.dll</HintPath>
-    </Reference>
-  </ItemGroup>-->
   <ItemGroup>
     <Compile Include="..\FFImageLoading.Mock\Extensions\TaskParameterExtensions.cs">
       <Link>Extensions\TaskParameterExtensions.cs</Link>
@@ -45,5 +40,8 @@
   <ItemGroup>
     <ProjectReference Include="..\FFImageLoading.Common\FFImageLoading.csproj">
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="WebPDecoder.Touch.NET" Version="1.0.0" />
   </ItemGroup>
 </Project>
