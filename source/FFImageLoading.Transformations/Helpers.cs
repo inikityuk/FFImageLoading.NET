@@ -8,16 +8,16 @@ namespace FFImageLoading.Transformations
 
 		public static void ThrowOrDefault()
 		{
-			if (ImageService.EnableMockImageService)
-				return;
+			//if (ImageService.EnableMockImageService)
+			//	return;
 
 			throw new Exception(_doNotReferenceMessage);
 		}
 
 		public static T ThrowOrDefault<T>()
 		{
-			if (ImageService.EnableMockImageService)
-				return default;
+			//if (ImageService.EnableMockImageService)
+			//	return default;
 
 			throw new Exception(_doNotReferenceMessage);
 		}

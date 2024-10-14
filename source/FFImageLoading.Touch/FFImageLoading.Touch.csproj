@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0-ios</TargetFramework>
+    <TargetFramework>net8.0-ios</TargetFramework>
     <OutputType>Library</OutputType>
     <RootNamespace>FFImageLoading</RootNamespace>
     <AssemblyName>FFImageLoading.Platform</AssemblyName>
@@ -42,6 +42,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="WebPDecoder.Touch.NET" Version="1.0.0" />
+    <PackageReference Include="WebPDecoder.Touch.NET" Version="1.0.1" />
   </ItemGroup>
 </Project>

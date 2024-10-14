@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>FFImageLoading.Transformations</RootNamespace>
     <AssemblyName>FFImageLoading.Transformations</AssemblyName>
     <PackageId>FFImageLoading.Transformations</PackageId>

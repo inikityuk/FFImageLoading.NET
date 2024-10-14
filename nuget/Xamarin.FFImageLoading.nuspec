@@ -3,7 +3,7 @@
 	<metadata minClientVersion="2.8.1">
 
 		<id>Xamarin.FFImageLoading.NET</id>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 		<title>FFImageLoading Plugin for Xamarin.iOS / Xamarin.Android / Xamarin.Mac / Windows</title>
 		<authors>Daniel Luberda, Fabien Molinet</authors>
 		<owners/>
@@ -41,14 +41,14 @@ Features:
 
 		<dependencies>
 
-            <group targetFramework="net7.0-ios16.1">
-               <dependency id="WebPDecoder.Touch.NET" version="1.0.0" /> 
+            <group targetFramework="net8.0-ios17.2">
+               <dependency id="WebPDecoder.Touch.NET" version="1.0.1" /> 
             </group>
 
-			<group targetFramework="net7.0-android33.0">
+			<group targetFramework="net8.0-android34.0">
 			</group>
 
-			<group targetFramework="net7.0">
+			<group targetFramework="net8.0">
 			</group>			
 
 		</dependencies>
@@ -58,26 +58,29 @@ Features:
 		<file src="..\README.md" target="" />
 		<file src="..\LICENSE.txt" target="" />
 		<!--Net Standard-->
-		<file src="..\source\FFImageLoading.Common\bin\Release\net7.0\FFImageLoading.dll" target="lib\net7.0\FFImageLoading.dll" />
-		<file src="..\source\FFImageLoading.Common\bin\Release\net7.0\FFImageLoading.xml" target="lib\net7.0\FFImageLoading.xml" />
-		<file src="..\source\FFImageLoading.Common\bin\Release\net7.0\FFImageLoading.pdb" target="lib\net7.0\FFImageLoading.pdb" />
-		<file src="..\source\FFImageLoading.Mock\bin\Release\net7.0\FFImageLoading.Platform.dll" target="lib\net7.0\FFImageLoading.Platform.dll" />
-		<file src="..\source\FFImageLoading.Mock\bin\Release\net7.0\FFImageLoading.Platform.xml" target="lib\net7.0\FFImageLoading.Platform.xml" />
+		<file src="..\source\FFImageLoading.Common\bin\Release\net8.0\**\*" target="lib\net8.0" />
+<!--		<file src="..\source\FFImageLoading.Common\bin\Release\net8.0\FFImageLoading.dll" target="lib\net8.0\FFImageLoading.dll" />
+		<file src="..\source\FFImageLoading.Common\bin\Release\net8.0\FFImageLoading.xml" target="lib\net8.0\FFImageLoading.xml" />
+		<file src="..\source\FFImageLoading.Common\bin\Release\net8.0\FFImageLoading.pdb" target="lib\net8.0\FFImageLoading.pdb" />
+		<file src="..\source\FFImageLoading.Mock\bin\Release\net8.0\FFImageLoading.Platform.dll" target="lib\net8.0\FFImageLoading.Platform.dll" />
+		<file src="..\source\FFImageLoading.Mock\bin\Release\net8.0\FFImageLoading.Platform.xml" target="lib\net8.0\FFImageLoading.Platform.xml" />-->
 	
 		<!--Xamarin.Android-->
-		<file src="..\source\FFImageLoading.Droid\bin\Release\net7.0-android\FFImageLoading.Platform.dll" target="lib\net7.0-android33.0\FFImageLoading.Platform.dll" />
-		<file src="..\source\FFImageLoading.Droid\bin\Release\net7.0-android\FFImageLoading.Platform.xml" target="lib\net7.0-android33.0\FFImageLoading.Platform.xml" />
-		<file src="..\source\FFImageLoading.Droid\bin\Release\net7.0-android\FFImageLoading.Platform.pdb" target="lib\net7.0-android33.0\FFImageLoading.Platform.pdb" />
-		<file src="..\source\FFImageLoading.Droid\bin\Release\net7.0-android\FFImageLoading.dll" target="lib\net7.0-android33.0\FFImageLoading.dll" />
-		<file src="..\source\FFImageLoading.Droid\bin\Release\net7.0-android\FFImageLoading.xml" target="lib\net7.0-android33.0\FFImageLoading.xml" />
-		<file src="..\source\FFImageLoading.Droid\bin\Release\net7.0-android\FFImageLoading.pdb" target="lib\net7.0-android33.0\FFImageLoading.pdb" />
+		<file src="..\source\FFImageLoading.Droid\bin\Release\net8.0-android\**\*" target="lib\net8.0-android34.0" />
+<!--		<file src="..\source\FFImageLoading.Droid\bin\Release\net8.0-android\FFImageLoading.Platform.dll" target="lib\net8.0-android34.0\FFImageLoading.Platform.dll" />
+		<file src="..\source\FFImageLoading.Droid\bin\Release\net8.0-android\FFImageLoading.Platform.xml" target="lib\net8.0-android34.0\FFImageLoading.Platform.xml" />
+		<file src="..\source\FFImageLoading.Droid\bin\Release\net8.0-android\FFImageLoading.Platform.pdb" target="lib\net8.0-android34.0\FFImageLoading.Platform.pdb" />
+		<file src="..\source\FFImageLoading.Droid\bin\Release\net8.0-android\FFImageLoading.dll" target="lib\net8.0-android34.0\FFImageLoading.dll" />
+		<file src="..\source\FFImageLoading.Droid\bin\Release\net8.0-android\FFImageLoading.xml" target="lib\net8.0-android34.0\FFImageLoading.xml" />
+		<file src="..\source\FFImageLoading.Droid\bin\Release\net8.0-android\FFImageLoading.pdb" target="lib\net8.0-android34.0\FFImageLoading.pdb" />-->
 
 		<!--Xamarin.iOS-->
-		<file src="..\source\FFImageLoading.Touch\bin\Release\net7.0-ios\FFImageLoading.Platform.dll" target="lib\net7.0-ios16.1\FFImageLoading.Platform.dll" />
-		<file src="..\source\FFImageLoading.Touch\bin\Release\net7.0-ios\FFImageLoading.Platform.xml" target="lib\net7.0-ios16.1\FFImageLoading.Platform.xml" />
-		<file src="..\source\FFImageLoading.Touch\bin\Release\net7.0-ios\FFImageLoading.Platform.pdb" target="lib\net7.0-ios16.1\FFImageLoading.Platform.pdb" />
-		<file src="..\source\FFImageLoading.Touch\bin\Release\net7.0-ios\FFImageLoading.dll" target="lib\net7.0-ios16.1\FFImageLoading.dll" />
-		<file src="..\source\FFImageLoading.Touch\bin\Release\net7.0-ios\FFImageLoading.xml" target="lib\net7.0-ios16.1\FFImageLoading.xml" />
-		<file src="..\source\FFImageLoading.Touch\bin\Release\net7.0-ios\FFImageLoading.pdb" target="lib\net7.0-ios16.1\FFImageLoading.pdb" />
+		<file src="..\source\FFImageLoading.Touch\bin\Release\net8.0-ios\**\*" target="lib\net8.0-ios17.2" />
+<!--		<file src="..\source\FFImageLoading.Touch\bin\Release\net8.0-ios\FFImageLoading.Platform.dll" target="lib\net8.0-ios17.2\FFImageLoading.Platform.dll" />
+		<file src="..\source\FFImageLoading.Touch\bin\Release\net8.0-ios\FFImageLoading.Platform.xml" target="lib\net8.0-ios17.2\FFImageLoading.Platform.xml" />
+		<file src="..\source\FFImageLoading.Touch\bin\Release\net8.0-ios\FFImageLoading.Platform.pdb" target="lib\net8.0-ios17.2\FFImageLoading.Platform.pdb" />
+		<file src="..\source\FFImageLoading.Touch\bin\Release\net8.0-ios\FFImageLoading.dll" target="lib\net8.0-ios17.2\FFImageLoading.dll" />
+		<file src="..\source\FFImageLoading.Touch\bin\Release\net8.0-ios\FFImageLoading.xml" target="lib\net8.0-ios17.2\FFImageLoading.xml" />
+		<file src="..\source\FFImageLoading.Touch\bin\Release\net8.0-ios\FFImageLoading.pdb" target="lib\net8.0-ios17.2\FFImageLoading.pdb" />-->
 	</files>
 </package>
